@@ -1,5 +1,10 @@
 <div class="container">
-    <div class="row row-content" ng-controller="MenuController">
-        <div ng-repeat="video in videos">{{video}}</div>
+    <div ng-controller="MenuController" class="videoContainer">
+            <navbar-test></navbar-test>
+            
+        <div ng-repeat="video in videos">
+            <video width="320" height="240" ng-src="{{video.url}}" controls>
+            </video> 
+        </div>
 </div>
 </div>
